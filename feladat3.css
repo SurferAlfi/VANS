@@ -1,0 +1,113 @@
+body{
+    background-image: url("vansmini.png");
+    background-repeat: repeat;
+}
+
+div{
+    width: 1300px; /*Eddig ér a szöveg balról jobbra.*/
+    margin: 0px auto; /*Középre rendezi.*/
+    background-color: #ffffff; /*Többségben fehér backgr.*/
+    padding-bottom: 20px; /*térköz alul*/
+}
+
+#menu1 { /*Vízszintes menü beállítása.*/
+    float: left; /*körbefuttatás, e nélkül a következő színbeállítás nem érvényesülne*/
+    width: 100%; /*A menü az alatta levő szövegtől elválik, birtokolja a teljes vízszintes sávját.*/
+    padding: 0; /*Térköz 0.*/
+    margin: 0 0 1 em 0; /*előzővel: felesleges térközök nélkül &&  em: relatív mértékegység. pl. 0.25em: az eredeti méret 0.25-szerese*/
+    list-style-type: none; /*lista-jelölő kikapcsolása*/
+    background-color: #000; /*fekete backgr.*/
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#menu1 li {display: inline} /*a következő float:left-el:a menüpontok egymás mellé kerüljenek, ne egymás alá.*/
+#menu1 a{
+    float: left;
+    padding: 0.25em 1em; /*A menü gomb nagyobb legyen, mint a menü szövege: megnöveli a gombokat*/
+    margin: 0.25em 0 0.25em 1em; /*A menü gombok közötti távolság beállítása, növelése*/
+    color: #DDD; /*Menü szövegszín beállítása, egyébként a link - látogatott link szín beállítás érvényesülne*/
+    text-decoration: none; /*link aláhúzás eltüntetése*/
+}
+#menu1 a:hover {background-color: royalblue;} /*Az egérkurzorra színváltással reagál a menüpont. A link a teljes li területét elfoglalja, ezért a teljes li elem linkként működik.*/
+p#bekezdes1 { /*ebben van a nagy kép*/
+clear:left;   /*E nélkül az oldal tetején maradna egy kis sáv a háttérrel.*/
+                /* körbefuttatást bal oldalon nem engedi */
+}
+
+p#bekezdes2 { /*második menü alatti szöveg*/
+    clear: left; /*Egy kis sáv maradna az előző menü és e között*/
+    padding: 10px; /*Megnöveli a bekezdés méretét mind a négy irányban*/
+    color: #0a0a0a; 
+    font-size: x-large; /*betüméret up*/
+    font-weight: bold; /*félkövér*/
+    background-color: #EEE;
+}
+p#bekezdes2 span { /*a sor első szava*/
+    color: #ff0000;
+}
+
+p#bekezdes2 span {
+    position: relative;
+    animation-name: move-right;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes move-right {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+
+p.bekezdes3 { /*H2 szöveg alatt*/
+    color: #c0c0c0;
+}
+
+a#gomb { /*Tetszik gomb*/
+    color: #5C74C8;
+    padding: 3px 5px 1px 25px; /*A Tetszik körüli keret mérete*/
+    background: url("gombok.png") no-repeat 6px 6px #ECEEF5; /*A képen 4 kis kép van egymás alatt. Ezekből az elsőt jeleníti meg: 6px 6px*/
+    border: 1px solid #CAD4E7;
+    border-radius: 5px; /* Lekerekítési kör sugara. */ 
+    text-decoration: none; /*link aláhúzás eltüntetése*/
+}
+
+h2, p { /* margó minden bekezdésre és H2-re*/
+    margin-left: 20px;
+}
+
+@keyframes vibrate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    25% {
+        transform: rotateZ(5deg);
+    }
+    50% {
+        transform: rotateZ(0deg);
+    }
+    75% {
+        transform: rotateZ(-5deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+p2
+{
+    display: inline-block;
+    font-size: 1em;
+    animation: vibrate 0.5s ease-in-out infinite;
+	margin-left: 40px;
+	margin-right: auto;
+}
