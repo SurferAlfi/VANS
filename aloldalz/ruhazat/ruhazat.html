@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Continuous Moving Paragraph Example</title>
+	<style>
+		@keyframes move-left-to-right {
+			0% {
+				transform: translateX(-100%);
+			}
+			100% {
+				transform: translateX(100%);
+			}
+		}
+		p {
+			animation: move-left-to-right 5s linear infinite;
+			white-space: nowrap;
+			overflow: hidden;
+			position: relative;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<p>This paragraph will continuously move from left to right.</p>
+</body>
+</html>
