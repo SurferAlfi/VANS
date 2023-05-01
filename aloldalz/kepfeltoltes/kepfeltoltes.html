@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Képgaléria</title>
+</head>
+<body>
+	<header>
+		<h1>Képgaléria</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Kezdőlap</a></li>
+			<li><a href="galery.html">Galéria</a></li>
+			<li><a href="upload.html">Képfeltöltés</a></li>
+		</ul>
+	</nav>
+	<main>
+		<h2>Képfeltöltés</h2>
+		<form method="post" action="upload.php" enctype="multipart/form-data">
+			<label for="file">Kép:</label>
+			<input type="file" name="file" id="file"><br><br>
+			<input type="submit" name="submit" value="Feltöltés">
+		</form>
+	</main>
+	<footer>
+		<p>Készítette: ChatGPT</p>
+	</footer>
+</body>
+</html>

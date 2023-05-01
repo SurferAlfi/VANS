@@ -9,20 +9,39 @@
 <div> 
     <nav> <!-- Menüsor doboz: lista + hivatkozások && A menüelemeket azért tesszük listába, mert így könnyebb lesz formázni (CSS)-->
         <ul id="menu1"> <!-- Felső menü -->
-            <li><a href="aloldalz/cipok.html ">Cipők</a></li><!--lista &&  href="#": csak jelöli a hivatkozást -->
+            <li><a href="aloldalz/cipok/cipok.html ">Cipők</a></li><!--lista &&  href="#": csak jelöli a hivatkozást -->
             <li><a href="aloldalz/ruhazat.html ">Ruházat</a></li>
             <li><a href="aloldalz/kiegeszitok.html ">Kiegészítők</a></li>
             <li><a href="aloldalz/uzletek.html ">Üzletek</a></li>
             <li><a href="aloldalz/rolunk.html ">Rólunk</a></li>
-            <li><a href="jobs/rolunk.html ">Légy a csapattagunk!</a></li>
+            <li><a href="aloldalz/csapattag.html ">Légy a csapattagunk!</a></li>
+            <li><a href="aloldalz/reg/reg.html ">Regisztrálj </a></li>
+            <li><a href="aloldalz/php/php">PHP Scriptek</a>
+            <li><a href="aloldalz/kepfeltoltes">Képfeltöltés</a>
         </ul>
     </nav>
     <p id="bekezdes1"><img src="logo.png"></p>
-    <p id="bekezdes2"><span> A magyar WebShop </span>
+    <p id="bekezdes2"><span>A magyar WebShop </span>
     <article>
         <h2>VANS "OFF THE WALL"</h2>
-        <p class="bekezdes3">Posted on Nov 30 2009 by admin</p>
-        <p><a id="gomb" href="#">Tetszik</a></p>
+
+        <p>A pontos idő: <span id="ido"></span></p>
+        <script>
+        var idoElem = document.getElementById("ido");
+
+        function frissitIdo() {
+        var most = new Date();
+        var ora = most.getHours();
+        var perc = most.getMinutes();
+        var masodperc = most.getSeconds();
+        idoElem.innerHTML = ora + ":" + perc + ":" + masodperc;
+        }
+
+        frissitIdo();
+        setInterval(frissitIdo, 1000);
+        </script>
+        <p><a id="gomb" href="#">Kedvelj minket!</a></p>
+        
         <h2>Történelem (Angol)</h2>
         <p>
             Vans' shoes have often been customized cosmetically by wearers, 
@@ -31,6 +50,9 @@
             checkerboard pattern, popular in ska and punk culture, was adopted 
             after the company noticed skateboarders drawing it on their shoes.
         </p>
+        <video src="video.mp4" width="640" height="360" autoplay loop muted poster="video-poster.jpg" preload="auto">
+            A böngésződ nem támogatja a videólejátszást.
+        </video>         
         <p>
             In 1982, Sean Penn wore a pair of Vans checkerboard slip-ons as 
             character Jeff Spicoli in Fast Times at Ridgemont High.
@@ -38,6 +60,8 @@
             teen Daniel Lara wearing Vans, went viral. In appreciation, the 
             company gave Lara a lifetime supply of Vans shoes.
         </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/49Oota0xmzU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>     
         <p>
             Paul Van Doren; his brother, James; and Gordon C. Lee opened the 
             first Vans store as "The Van Doren Rubber Company" on March 16, 
@@ -50,6 +74,8 @@
             to sell and Paul Van Doren did not have change to give customers; 
             customers took their shoes home and came back the next day to pay.
         </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.3627939647436!2d19.134345776187562!3d47.50232547118043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dcaa366fd093%3A0xb6a5770cb9cac02a!2zVkFOUyBNw6Fya2Fib2x0IMOBcmvDoWQ!5e0!3m2!1shu!2shu!4v1682962644922!5m2!1shu!2shu" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <p2>
             VANS OFF THE WALL.
         </p2>
