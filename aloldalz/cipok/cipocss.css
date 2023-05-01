@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+    color: white;
+  }
+  
+  header {
+    background-color: red;
+    padding: 10px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 10px;
+  }
+  
+  nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  nav a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  main {
+    margin-top: 20px;
+  }
+  
+  h2 {
+    color: red;
+  }
+  
+  section
+  

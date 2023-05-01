@@ -47,7 +47,7 @@ p#bekezdes2 { /*második menü alatti szöveg*/
     font-weight: bold; /*félkövér*/
     background-color: #EEE;
 }
-p#bekezdes2 span { /*a sor első szava*/
+p#bekezdes2 span { 
     color: #ff0000;
 }
 
@@ -67,10 +67,6 @@ p#bekezdes2 span {
       left: 100%;
     }
   }
-
-p.bekezdes3 { /*H2 szöveg alatt*/
-    color: #c0c0c0;
-}
 
 a#gomb { /*Tetszik gomb*/
     color: #5C74C8;
